@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 public class CyclicRotation {
-    public static int[] solution(int[] A, int K) {
+    public int[] solution(int[] A, int K) {
 
         int size = A.length;
         int[] rotated = new int [size];
@@ -14,7 +14,7 @@ public class CyclicRotation {
 
     public static void main(String[] args) {
         int[] test = new int[]{3, 8, 9, 7, 6};
-        int[] fin = solution(test,3);
+        int[] fin = new CyclicRotation().solution(test,3);
 
         System.out.println(Arrays.toString(fin));
 
